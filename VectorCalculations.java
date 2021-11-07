@@ -93,6 +93,7 @@ public class VectorCalculations {
             distance = (int) getTotalDistanceToPoint((int)points.get(i)[0],(int)points.get(i)[1],mouseX,mouseY);
             //something to do with this:
             if(distance!=0) {
+                //Looking back at this years later, I realize you would just use the inverse square equation.
                 newMouseInfluenceFactor = (mouseInfluenceFactor/Math.pow(mouseInfluenceFalloff,distance)); //i dont think this equation is right but basic explanation: The quadradic part is like contrast because adding a high exponent to a base results in a type of contrast so the higher the distance the bigger the exponent is so it seperates the values well
             }
             
